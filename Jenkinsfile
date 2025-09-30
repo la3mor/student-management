@@ -38,7 +38,7 @@ pipeline {
             junit 'target/surefire-reports/*.xml'
         }
         success {
-            echo '✅ Build réussi! Application Spring Boot prête.'
+            echo '✅ Build réussi! Tests passés avec H2 database.'
         }
         failure {
             echo '❌ Build échoué! Vérifiez les logs.'
